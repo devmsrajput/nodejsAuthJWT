@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs') %>
+    <%- include('../partials/navbar.ejs') %>
+        <div class="container flex flex-col-reverse md:flex-row justify-center px-5">
+            <div class="hero-left md:mt-10 md:col-5">
+                <h2 class="ui text-3xl font-sans tracking-wider">Welcome</h2>
+                <div class="hero-text mt-5">
+                    <p class="ui text-base tracking-wide"><span class="ui text-2xl">L</span>orem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Delectus recusandae magnam et id aliquam vel dicta dolorum minima
+                        dolor expedita iste, ullam velit alias fugit mollitia officiis quasi, explicabo vitae.
+                    </p>
+                </div>
+                <div class="ui md:mt-10">
+                    <a href="/login"><button class="ui bg-blue-700 px-2 py-1 text-slate-200 rounded m-2">Sign
+                            in</button></a>
+                    <a href="/register"><button class="ui bg-blue-700 px-2 py-1 text-slate-200 rounded m-2">Sign
+                            up</button></a>
+                </div>
+            </div>
+            <div class="hero-right md:col-7">
+                <img class="ui xl:w-[50vw] lg:w-[70vw] md:w-[200vw] w-[90%] sm:w-[70%] mx-auto" src="images/mobile.png"
+                    alt="hero-image">
+            </div>
+        </div>
+        <%- include('../partials/footer.ejs') %>

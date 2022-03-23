@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+    <div class="container-fluid">
+        <div class="header bg-blue-900 py-3 flex">
+            <nav class="nav w-full flex justify-between">
+                <div class="title pl-5">
+                    <h3 class="ui text-2xl text-slate-200 hover:text-slate-300 font-bold cursor-pointer">facebook</h3>
+                </div>
+                <div class="login">
+                    <a href='/<%= user %>/logout'>
+                        <h3 class="ui mt-1 mr-24 cursor-pointer text-slate-200 hover:text-slate-300">Sign out</h3>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container flex flex-col-reverse md:flex-row justify-center px-5">
+        <div class="hero-left md:mt-10 md:col-5">
+            <h2 class="ui text-3xl font-sans tracking-wider">Welcome</h2>
+            <div class="hero-text mt-5">
+                <p class="ui text-base tracking-wide"><span class="ui text-2xl">L</span>orem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Delectus recusandae magnam et id aliquam vel dicta dolorum minima
+                    dolor expedita iste, ullam velit alias fugit mollitia officiis quasi, explicabo vitae.
+                </p>
+            </div>
+        </div>
+        <div class="hero-right md:col-7">
+            <img class="ui xl:w-[50vw] lg:w-[70vw] md:w-[200vw] w-[90%] sm:w-[70%] mx-auto" src="images/dashboard.png"
+                alt="hero-image">
+        </div>
+    </div>
+<%- include('../partials/footer.ejs') %>
